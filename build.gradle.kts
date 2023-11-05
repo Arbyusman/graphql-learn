@@ -1,8 +1,8 @@
 plugins {
 	java
-	id("org.springframework.boot") version "3.1.4"
-	id("io.spring.dependency-management") version "1.1.3"
-	id("com.netflix.dgs.codegen") version "5.6.6"
+	id("org.springframework.boot") version "3.0.0"
+	id("io.spring.dependency-management") version "1.1.0"
+	id("com.netflix.dgs.codegen") version "5.11.1"
 
 }
 
@@ -24,9 +24,9 @@ dependencies {
 
 
 	// Ngoprek Dependencie
-	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
+	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:6.0.0"))
 	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
-	implementation("net.datafaker:datafaker:1.7.0")
+	implementation("net.datafaker:datafaker:1.+")
 }
 
 tasks.withType<Test> {
