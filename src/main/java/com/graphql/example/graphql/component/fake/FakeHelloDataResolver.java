@@ -18,16 +18,6 @@ public class FakeHelloDataResolver {
             return FakeDataSource.HELLO_LIST;
     }
 
-//    @DgsQuery
-//    public Hello oneHello(){
-//        return FakeDataSource.HELLO_LIST.get(
-//                ThreadLocalRandom.current().nextInt(
-//                        FakeDataSource.HELLO_LIST.size()
-//                )
-//        );
-//    }
-
-
 
     @DgsQuery
     public Hello oneHello(){
